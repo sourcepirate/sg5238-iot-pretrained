@@ -3,11 +3,10 @@ from keras import backend as K
 import tensorflow as tf
 
 model_content = open("models/model.json").read()
-weights_content = open("models/weights.h5").read()
 
 K.set_learning_phase(0)
 model = model_from_json(config)
-model.load_weights(weights_file)
+model.load_weights("models/weights.h5")
 
 saver = tf.train.Saver()
 sess = K.get_session()
