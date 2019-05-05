@@ -1,1 +1,0 @@
-python3 keras2graph.py models/model.json input_1 activation_7/Softmax models/weights.h5 ./graph
